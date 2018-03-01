@@ -1,0 +1,13 @@
+<label>Nome</label>
+<input type="text" [(ngModel)]="nome">
+{{nome}}
+<label>Valor</label>
+<input type="text" [(ngModel)]="valor">
+{{valor}}
+<button type="button" (click)="inserirConta()">Inserir conta</button>
+<ul>
+  <li *ngFor="let contaPagar of listaContasPagar">
+    {{ contaPagar.nome }} - {{ contaPagar.valor }}
+  </li>
+</ul>
+
